@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+	
+		
+	
+</head>
+
+<body>
+	<div class="container">
+		<h1> Testing Purpose calculator <br>
+			</h1>
+
+		<div class="converter-row">
+			<div class="col">
+				<label>ENTER TEMPERATURE</label>
+				<input type="text" id="temp">
+                
+			</div>
+
+
+			<div class="col">
+				<button onclick="convertToCelsius()"   class="celsiusbtn convert" >convert to celsius</button>
+				
+			</div>
+            <div class="col">
+				<button onclick="convertToFahrenheit()"   class="fahrenheitbtn convert" >convert to fahrenheit</button>
+				
+			</div>
+		</div>
+        <div class="result">
+            <label>FInal Result</label>
+            <input type="text" readonly class="resultinput">
+        </div>
+	</div>
+
+	
+</body>
+<script src= "script.js"></script>
+</html>

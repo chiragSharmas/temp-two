@@ -9,6 +9,16 @@ let tempValue = "";
 //     console.log(tempValue);
     
 // }
+let inputValue = document.getElementById("temp")
+inputValue.addEventListener("input",(e)=>{
+    var reg = /^[\d+\-*/%^]+$/;
+    if(!reg.test((e.target.value))){
+        console.log("chirag")
+        e.target.value= e.target.value.slice(0, -1)
+        }
+
+})
+
 
 function convertToCelsius() {
     tempValue=document.getElementById("temp").value; 
@@ -28,11 +38,12 @@ return
 }
 
 function convertToFahrenheit() {
+    
     tempValue = document.getElementById("temp").value;
     if(tempValue==""){
 
         alert("please enter a fahrenheit value")
-       
+       return
             }
 
     let resultField = document.querySelector(".resultinput");
